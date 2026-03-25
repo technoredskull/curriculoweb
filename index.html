@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Quem sou Eu</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <style>
+      /* RESET */
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      /* CONFIGURAÇÃO GLOBAL */
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background: white;
+        color: #333;
+        line-height: 1.6;
+        padding: 30px;
+        transition: 0.4s;
+      }
+
+      /* CONTAINER */
+
+      .container {
+        max-width: 1100px;
+        margin: auto;
+      }
+
+      /* CABEÇALHO */
+
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-bottom: 40px;
+      }
+
+      header h1 {
+        font-size: 2.5rem;
+        color: black;
+        border-bottom: 4px solid gold;
+        padding-bottom: 6px;
+        display: inline-block;
+      }
+
+      header h2 {
+        font-size: 1rem;
+        font-weight: normal;
+        margin-top: 10px;
+        color: #555;
+      }
+
+      /* AVATAR */
+
+      .avatar {
+        width: 160px;
+        height: 160px;
+        border-radius: 50%;
+        overflow: hidden;
+        border: 3px solid gold;
+      }
+
+      .avatar img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      /* TEXTO */
+
+      main p {
+        text-align: justify;
+        margin-bottom: 20px;
+        font-size: 1.05rem;
+      }
+
+      /* HABILIDADES */
+
+      .habilidades {
+        margin-top: 20px;
+      }
+
+      .habilidades ul {
+        padding-left: 20px;
+      }
+
+      /* BOTÕES */
+
+      .btn-area {
+        margin-top: 30px;
+      }
+
+      /* BOTÃO CURRÍCULO */
+
+      .btn-cv {
+        background: black;
+        color: white;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+        margin-right: 10px;
+        transition: 0.3s;
+      }
+
+      .btn-cv:hover {
+        background: gold;
+        color: black;
+      }
+
+      /* BOTÃO IMPRIMIR */
+
+      .btn-print {
+        background: black;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        margin-right: 10px;
+        transition: 0.3s;
+        border: none;
+        cursor: pointer;
+      }
+
+      .btn-print:hover {
+        background: gold;
+        color: black;
+      }
+
+      /* BOTÃO DARK MODE */
+
+      .btn-theme {
+        background: gold;
+        color: black;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+
+      .btn-theme:hover {
+        opacity: 0.8;
+      }
+
+      /* RODAPÉ */
+
+      .social-footer {
+        margin-top: 50px;
+        padding-top: 20px;
+        border-top: 2px solid #ddd;
+        text-align: center;
+      }
+
+      .social-footer a {
+        margin: 0 15px;
+        font-size: 28px;
+        color: black;
+        transition: 0.3s;
+      }
+
+      .social-footer a:hover {
+        color: gold;
+        transform: scale(1.2);
+      }
+
+      /* CONTATO PARA IMPRESSÃO */
+
+      .contato-print {
+        display: none;
+        margin-top: 30px;
+      }
+
+      /* DARK MODE */
+
+      .dark-mode {
+        background: #121212;
+        color: #eee;
+      }
+
+      .dark-mode header h1 {
+        color: white;
+      }
+
+      .dark-mode .social-footer a {
+        color: white;
+      }
+
+      /* RESPONSIVO */
+
+      @media (max-width: 768px) {
+        header {
+          flex-direction: column;
+          text-align: center;
+        }
+
+        .avatar {
+          margin-top: 20px;
+        }
+      }
+
+      /* IMPRESSÃO */
+
+      @media print {
+        .btn-area {
+          display: none;
+        }
+
+        .social-footer {
+          display: none;
+        }
+
+        .contato-print {
+          display: block;
+        }
+
+        body {
+          margin: 0;
+        }
+
+        .container {
+          max-width: 800px;
+          margin: auto;
+        }
+
+        p {
+          font-size: 12pt;
+          line-height: 1.4;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <div>
+          <h1>Eduardo dos Anjos Sobreira</h1>
+
+          <h2>• Desenvolvimento de sistemas</h2>
+        </div>
+
+        <div class="avatar">
+          <img src="11822951.jpg" alt="Avatar" />
+        </div>
+      </header>
+
+      <main>
+        <p>
+          Sou estudante do ensino médio e atualmente curso o técnico em
+          Desenvolvimento de Sistemas. Tenho focado meus estudos em lógica de
+          programação e linguagens como [ex: Java/Python], buscando sempre
+          aplicar o conhecimento teórico em projetos práticos. Sou uma pessoa
+          dedicada, organizada e busco constantemente aprender novas tecnologias
+          para resolver problemas reais através do código.
+        </p>
+
+        <p>
+          
+        </p>
+
+        <p>
+          
+        </p>
+
+        <div class="habilidades">
+          <h3>Principais habilidades</h3>
+
+          <ul>
+            <li>Lógica de Programação</li>
+            <li>Linguagens de Programação</li>
+            <li>Desenvolvimento web (HTML, CSS e lógica de programação)</li>
+            <li>Banco de Dados</li>
+            <li>Comunicação eficaz e trabalho em equipe</li>
+            <li>Resolução de problemas</li>
+            <li>Aprendizado Ativo</li>
+            <li>Organização</li>
+            <li>Resiliênci</li>
+          </ul>
+        </div>
+
+        <!-- BOTÕES -->
+
+        <div class="btn-area">
+          <button onclick="window.print()" class="btn-print">
+            <i class="fa-solid fa-print"></i> Imprimir Currículo
+          </button>
+
+          <button onclick="toggleTheme()" class="btn-theme">
+            <i class="fa-solid fa-moon"></i> Dark Mode
+          </button>
+        </div>
+
+        <!-- CONTATO PARA IMPRESSÃO -->
+
+        <section class="contato-print">
+          <h3>Contato</h3>
+
+          <p>
+            Email:eanjos799@gmail.com<br />
+            WhatsApp: +55 11 96980-7036<br />
+            
+          </p>
+        </section>
+      </main>
+
+      <footer class="social-footer">
+        <a href="https://wa.me/5511969807036" target="_blank">
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+
+        <a href="mailto:eanjos799@gmail.com">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+
+        <a
+          
+        </a>
+
+        <a 
+        </a>
+
+        <a 
+        </a>
+
+        <a 
+        </a>
+      </footer>
+    </div>
+
+    <script>
+      function toggleTheme() {
+        document.body.classList.toggle("dark-mode");
+      }
+    </script>
+  </body>
+</html>
